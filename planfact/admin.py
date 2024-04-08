@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import MedicalOrganization, Department, Corpus, Doctor, IndicatorType, IndicatorSubtype, MonthlyPlan, \
-    OrganizationMonthlyPlan, CorpusMonthlyPlan, DepartmentMonthlyPlan, DoctorMonthlyPlan
+    OrganizationMonthlyPlan, CorpusMonthlyPlan, DepartmentMonthlyPlan, DoctorMonthlyPlan, CorpusPlan, \
+    DepartmentPlan, DoctorPlan, OrganizationPlan
 
 
 class MedicalOrganizationAdmin(admin.ModelAdmin):
@@ -20,6 +21,11 @@ admin.site.register(OrganizationMonthlyPlan)
 admin.site.register(CorpusMonthlyPlan)
 admin.site.register(DepartmentMonthlyPlan)
 admin.site.register(DoctorMonthlyPlan)
+
+admin.site.register(OrganizationPlan)
+admin.site.register(CorpusPlan)
+admin.site.register(DepartmentPlan)
+admin.site.register(DoctorPlan)
 
 
 
